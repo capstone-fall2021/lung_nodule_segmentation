@@ -1,0 +1,82 @@
+Processing data from path /data/all/train/, sample_frac=0.1
+Training samples 16706 and val samples 4176
+Using torch version 1.10.0a0+3fd9dcf
+Number of GPUs = 4
+Datatype of image = torch.float32 and labels = torch.float32
+Shape of image torch.Size([1, 512, 512]) and label torch.Size([16, 1, 512, 512])
+Epoch 0 trained with loss: 0.600962698630739. The running time is 360.9879183769226.
+Epoch 0 evaluated with loss: 0.37965052783260855, dice score: 7.499838102376089e-05. The running time is 38.93122363090515.
+Best model saved at epoch: 0
+Epoch 1 trained with loss: 0.21958547183201074. The running time is 351.37743043899536.
+Epoch 1 evaluated with loss: 0.11178975703615796, dice score: 7.512471347581595e-05. The running time is 32.3860297203064.
+Best model saved at epoch: 1
+Epoch 2 trained with loss: 0.06766218845353743. The running time is 350.7149727344513.
+Epoch 2 evaluated with loss: 0.038687130272160086, dice score: 7.38643211661838e-05. The running time is 32.293888092041016.
+Best model saved at epoch: 2
+Epoch 3 trained with loss: 0.025478936015276246. The running time is 350.54994344711304.
+Epoch 3 evaluated with loss: 0.016151112079677454, dice score: 7.361989992205054e-05. The running time is 32.331029653549194.
+Best model saved at epoch: 3
+Epoch 4 trained with loss: 0.011262653324236139. The running time is 350.21483874320984.
+Epoch 4 evaluated with loss: 0.007574265137657352, dice score: 6.904856854816899e-05. The running time is 32.32388496398926.
+Best model saved at epoch: 4
+Epoch 5 trained with loss: 0.005505487911456652. The running time is 350.13213777542114.
+Epoch 5 evaluated with loss: 0.003892074021514348, dice score: 7.078042108332738e-05. The running time is 32.24466133117676.
+Best model saved at epoch: 5
+Epoch 6 trained with loss: 0.002881530213000422. The running time is 349.8761103153229.
+Epoch 6 evaluated with loss: 0.002119261021208432, dice score: 6.330076575977728e-05. The running time is 32.36108207702637.
+Best model saved at epoch: 6
+Epoch 7 trained with loss: 0.0015921157580893932. The running time is 349.9588236808777.
+Epoch 7 evaluated with loss: 0.0012348248691108948, dice score: 5.821725426358171e-05. The running time is 32.32007169723511.
+Best model saved at epoch: 7
+Epoch 8 trained with loss: 0.0009222575756899442. The running time is 350.10484790802.
+Epoch 8 evaluated with loss: 0.0007440199769080628, dice score: 4.205701407045126e-05. The running time is 32.39105463027954.
+Best model saved at epoch: 8
+Epoch 9 trained with loss: 0.0005588633179025163. The running time is 350.145667552948.
+Epoch 9 evaluated with loss: 0.0004997644892365625, dice score: 4.379542951937765e-05. The running time is 32.33180499076843.
+Best model saved at epoch: 9
+Epoch 10 trained with loss: 0.00035640326079034633. The running time is 350.2187502384186.
+Epoch 10 evaluated with loss: 0.0003737527813532272, dice score: 4.292639277991839e-05. The running time is 32.324331760406494.
+Best model saved at epoch: 10
+Epoch 11 trained with loss: 0.00024106521153840365. The running time is 350.541419506073.
+Epoch 11 evaluated with loss: 0.00029203585552861665, dice score: 3.537049997248687e-05. The running time is 32.321003437042236.
+Best model saved at epoch: 11
+Epoch 12 trained with loss: 0.00017226837597994588. The running time is 350.4587163925171.
+Epoch 12 evaluated with loss: 0.00026898551761572807, dice score: 3.7421570596052334e-05. The running time is 32.32656812667847.
+Best model saved at epoch: 12
+Epoch 13 trained with loss: 0.00012992109361360335. The running time is 350.8569939136505.
+Epoch 13 evaluated with loss: 0.00023833271236169167, dice score: 3.326040314277634e-05. The running time is 32.22973656654358.
+Best model saved at epoch: 13
+Epoch 14 trained with loss: 0.0001067337259239017. The running time is 350.3903398513794.
+Epoch 14 evaluated with loss: 0.00021820968960263985, dice score: 2.800072979880497e-05. The running time is 32.286720752716064.
+Best model saved at epoch: 14
+Epoch 15 trained with loss: 8.993191042385548e-05. The running time is 350.83805322647095.
+Epoch 15 evaluated with loss: 0.00022053797841728313, dice score: 2.7923635570914485e-05. The running time is 32.26237607002258.
+Best model saved at epoch: 15
+Epoch 16 trained with loss: 8.024565242313051e-05. The running time is 350.8210768699646.
+Epoch 16 evaluated with loss: 0.00020497189104818302, dice score: 2.49189579335507e-05. The running time is 32.29638862609863.
+Best model saved at epoch: 16
+Epoch 17 trained with loss: 6.322899247885489e-05. The running time is 350.6643269062042.
+Epoch 17 evaluated with loss: 0.00020523059934421882, dice score: 2.230638165201526e-05. The running time is 32.15285658836365.
+Best model saved at epoch: 17
+Epoch 18 trained with loss: 5.691339219231558e-05. The running time is 351.0502016544342.
+Epoch 18 evaluated with loss: 0.00024162134712248792, dice score: 3.209249916835688e-05. The running time is 32.44675850868225.
+Best model saved at epoch: 18
+Epoch 19 trained with loss: 4.9723835803253164e-05. The running time is 350.84149146080017.
+Epoch 19 evaluated with loss: 0.0002266392529692817, dice score: 2.6805457309819758e-05. The running time is 32.268417835235596.
+Best model saved at epoch: 19
+Epoch 20 trained with loss: 4.794032003873322e-05. The running time is 350.8209662437439.
+Epoch 20 evaluated with loss: 0.00023701763486020579, dice score: 2.9948934752610512e-05. The running time is 32.28226184844971.
+Best model saved at epoch: 20
+Epoch 21 trained with loss: 3.7921379019903006e-05. The running time is 351.0669095516205.
+Epoch 21 evaluated with loss: 0.000246592836616676, dice score: 2.415749077044893e-05. The running time is 32.33846640586853.
+Best model saved at epoch: 21
+Epoch 22 trained with loss: 3.6623309315647373e-05. The running time is 350.9372799396515.
+Epoch 22 evaluated with loss: 0.00026051699520068507, dice score: 3.2931133318925276e-05. The running time is 32.369609355926514.
+Best model saved at epoch: 22
+Epoch 23 trained with loss: 3.6687387766982216e-05. The running time is 351.0188891887665.
+Epoch 23 evaluated with loss: 0.00022510393526877943, dice score: 2.3224076358019374e-05. The running time is 32.216203927993774.
+Best model saved at epoch: 23
+Epoch 24 trained with loss: 3.336165942848015e-05. The running time is 351.03936314582825.
+Epoch 24 evaluated with loss: 0.00023674803536402728, dice score: 2.466690057190135e-05. The running time is 32.35974311828613.
+Best model saved at epoch: 24
+Training is completed.

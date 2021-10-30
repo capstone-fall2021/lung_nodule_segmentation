@@ -1,0 +1,12 @@
+Processing data from path /data/all/train/, sample_frac=1.0
+Training samples 167068 and val samples 41768
+Using torch version 1.10.0a0+3fd9dcf
+Number of GPUs = 4
+Datatype of image = torch.float32 and labels = torch.float32
+Shape of image torch.Size([1, 512, 512]) and label torch.Size([16, 1, 512, 512])
+Epoch 0 trained with loss: 0.09231482297176062. The running time is 3509.3109862804413.
+Epoch 0 evaluated with loss: 0.00048331868333775194, dice score: 1.1683482625812758e-05. The running time is 653.8902454376221.
+Best model saved at epoch: 0
+Epoch 1 trained with loss: 0.00017580198016447994. The running time is 3502.1274428367615.
+Epoch 1 evaluated with loss: 0.00011850469402787177, dice score: -1.6907050621739472e-06. The running time is 653.6739859580994.
+Best model saved at epoch: 1
