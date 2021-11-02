@@ -1,0 +1,5 @@
+train: /app/data/yolov5/train
+val: /app/data/yolov5/train
+
+nc: 1
+names: ['nodule']
