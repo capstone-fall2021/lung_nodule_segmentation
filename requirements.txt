@@ -1,0 +1,7 @@
+pydicom==2.2.2
+pylidc==0.2.2
+torchsummary==1.5.1
+imageio==2.10.4
+gsutil==5.5
+google-cloud-bigquery==2.30.1
+
