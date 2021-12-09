@@ -28,37 +28,37 @@ Allow http and https traffic
 
 Make sure you have a firewall rule created for your ‘network’ of the VM instance
 
-
 Install gcloud SDK on your local machine / Mac 
 ssh into the VM instance on GCP 
 Run gcloud auth login
 
-Then, gcloud compute ssh --zone "<zone>" "<VM name>" --project "<project name assigned by IDC>"   
-  
- 
+Then, `gcloud compute ssh --zone "zone" "VM name" --project "project name assigned by IDC"`
+
 Check out the code from the repo on the VM instance
-git clone <this repo>
+git clone "this repo"
 
 We will be using NVIDIA GPUs so the docker image should be able to recognize the underlying GPU hardware and talk to it via the necessary drivers. 
  
 There are CUDA toolkits and cuDNN libraries that need to be installed. (This comes with the deep learning VM we deployed from GCP marketplace)
  
 However if we use a ready image from NVIDIA NGC, it will be a lot easier.
-docker pull nvcr.io/nvidia/tensorflow:21.08-tf2-py3
+`docker pull nvcr.io/nvidia/tensorflow:21.08-tf2-py3`
+
 Check the docker version you have in your VM instance, if its newer tan 19.03 we have a set of instructions to start the docker images for NVIDIA GPU compatibility
 
-docker run --gpus all -it --rm -p 8889:8889 -p 6006:6006 -v ~/capstone/lungct_segmentation:/app nvcr.io/nvidia/tensorflow:21.08-tf2-py3
+`docker run --gpus all -it --rm -p 8889:8889 -p 6006:6006 -v ~/capstone/lungct_segmentation:/app nvcr.io/nvidia/tensorflow:21.08-tf2-py3`
 
-Using pytorch
+##### Using pytorch
 
-docker run --gpus all -it --rm --ipc=host -p 8889:8889 -p 6006:6006 -v ~/capstone/lungct_segmentation:/app nvcr.io/nvidia/pytorch:21.02-py3
+`docker run --gpus all -it --rm --ipc=host -p 8889:8889 -p 6006:6006 -v ~/capstone/lungct_segmentation:/app nvcr.io/nvidia/pytorch:21.02-py3`
   
 On your local machine port forward the VM instance so that you can access the jupyter lab in you local machine browser
   
-gcloud compute ssh <vm name> --project <idc assigned project name> --zone <zone> -- -NL 8889:localhost:8889
+`gcloud compute ssh 'vm name' --project 'idc assigned project name' --zone 'zone' -- -NL 8889:localhost:8889`
 
 In the container launch the jupyter notebook
-jupyter lab --ip 0.0.0.0 --port 8889 --allow-root --notebook-dir=/app
+
+`jupyter lab --ip 0.0.0.0 --port 8889 --allow-root --notebook-dir=/app`
 
   
 The project setting in the notebook is important, make sure this is your project in GCP and you have access to it as a developer and tester. 
@@ -73,11 +73,12 @@ You're using a remote jupyter notebook (it's running on a GCP VM instance and yo
   
 For setting up access for gsutil, use ‘gsutil config’ on the shell of the docker container or launch a terminal in jupyter lab. You will be asked to authenticate and then supply the token from the authentication.
 
+##### Multi-GPU training
+
 When using multi-GPU training, ensure that you have set the shared docker memory to a higher value such as 256m.
 Moreover, the code you should use to train using multi-GPU should use the distributed strategy.
   
-  
-For training in pytorch using DataParallel when using a docker container set the --ipc=host argument so that you have enough shared memory
+For training in pytorch using DataParallel when using a docker container set the `--ipc=host` argument so that you have enough shared memory
 
 
 #### Downloading data from IDC
