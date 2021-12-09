@@ -80,6 +80,21 @@ Moreover, the code you should use to train using multi-GPU should use the distri
 For training in pytorch using DataParallel when using a docker container set the --ipc=host argument so that you have enough shared memory
 
 
+#### Downloading data from IDC
+  
+The notebook 'download_data_lidc.ipynb' fetches the data from IDC and makes it available on the VM instance.
+The DICOM images are saved in respective train, test and val directories which are then used to generate datasets specific to the model training we would do next.
+  
+  
+#### Prepare the data for YoloV5 bounding box detection training
+  
+The notebook 'yolov5_data_preparation.ipynb' prepares training data for the Yolov5 pytorch training. It performs some image preprocessing like ROI extraction and prepares the bounding box labels in the YoloV5 pytorch format.
+ 
+#### Bounding box detection model training
+  
+The notebook 'yolov5_training_v2.ipynb' performs the YoloV5 training for bounding box detection. It first tunes the hyper paramater for our dataset and then trained the model. It uses pretrained weights from Yolov5s. 
+Note: the hyper paramaters are tuned for 100 generations as opposed to 300 generations recommended by Yolo. This is because we were preserving credits to explore and train the segmentation model as well.
+  
 
 
 
